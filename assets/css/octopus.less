@@ -1,0 +1,176 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    user-select: none;
+}
+
+#img-main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+/*
+Link to dialog.su
+*/
+#link-to-website {
+    position: absolute;
+    cursor: pointer;
+    top: 13px;
+    left: 20px;
+    height: 45px;
+    width: 80px;
+    z-index: 2;
+}
+
+/*
+Power led
+*/
+#img-power-off {
+    position: absolute;
+    top: 12px;
+    left: 1120px;
+    z-index: 2;
+}
+
+#img-power-on {
+    position: absolute;
+    top: 12px;
+    left: 1120px;
+    z-index: 3;
+    visibility: hidden;
+}
+
+/*
+Ethernet leds
+*/
+#img-net-on {
+    position: absolute;
+    top: 80px;
+    left: 996px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+#img-net-data {
+    position: absolute;
+    top: 80px;
+    left: 962px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+/*
+LESS variables
+*/
+@left-edge-status: 55px;
+@left-edge-charge: 28px;
+@left-edge-gray:   28px;
+@left-edge-input:  60px;
+@left-edge-socket: 22px;
+@shift: 58px;
+
+/*
+Status leds
+*/
+each(range(0, 15), {
+    #img-status-@{value} {
+        position: absolute;
+        top: 58px;
+        left: calc(@left-edge-status + @shift * @value);
+        z-index: 2;
+        visibility: hidden;
+    }
+});
+
+/*
+Charge leds
+*/
+each(range(0, 15), {
+    #img-charge-@{value} {
+        position: absolute;
+        top: 58px;
+        left: calc(@left-edge-charge + @shift * @value);
+        z-index: 2;
+        visibility: hidden;
+    }
+});
+
+/*
+ Garaying numbers
+*/
+each(range(0, 15), {
+    #img-gray-@{value} {
+        position: absolute;
+        top: 105px;
+        left: calc(@left-edge-gray + @shift * @value);
+        z-index: 2;
+        opacity: 0.7;
+        visibility: visible;
+    }
+});
+
+/*
+Charging indicator
+*/
+each(range(0, 15), {
+    #socket-charge-@{value} {
+        position: absolute;
+        top: 77px;
+        left: calc(@left-edge-socket + @shift * @value);
+        z-index: 4;
+        visibility: hidden;
+    }
+});
+
+/*
+Fault indicator
+*/
+each(range(0, 15), {
+    #socket-fault-@{value} {
+        position: absolute;
+        top: 77px;
+        left: calc(@left-edge-socket + @shift * @value);
+        z-index: 5;
+        visibility: hidden;
+    }
+});
+
+/*
+USB switch
+*/
+each(range(0, 15), {
+    #usb-switch-@{value} {
+        position: absolute;
+        top: 107px;
+        left: calc(@left-edge-input + @shift * @value);
+        z-index: 3;
+        visibility: visible;
+    }
+});
+
+#usb-switch-data {
+    position: absolute;
+    top: 114px;
+    left: 1043px;
+    z-index: 3;
+    visibility: visible;
+}
+
+#img-data-led {
+    position: absolute;
+    top: 79px;
+    left: 1042px;
+    z-index: 3;
+    visibility: hidden;
+}
+
+#img-data-link {
+    position: absolute;
+    top: 40px;
+    left: 913px;
+    z-index: 3;
+    visibility: hidden;
+}

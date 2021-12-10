@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" type="text/css" href="./assets/css/octopus.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/toggle.css" />
+    <title></title>
+  </head>
+  <body>
+    <div id='main'>
+      <img id='img-main' src="./assets/img/octopus.png" height='140px'>
+      <!-- www -->
+      <a id='link-to-website' href='http://www.dialog.su' target='_blank' title="Перейти на www.dialog.su">&nbsp;</a>
+      <!-- power indicators -->
+      <img id='img-power-off' src="./assets/img/power-off.png" height='100px'>
+      <img id='img-power-off' src="./assets/img/power-off.png" height='100px'>
+      <img id='img-power-on' src="./assets/img/power-on.png" height='100px'>
+      <!-- Ethernet images -->
+      <img id='img-net-on' src="./assets/img/green-rect.png" height='10px'>
+      <img id='img-net-data' src="./assets/img/yellow-rect.png" height='10px'>
+      <!-- Status images -->
+      <span id='leds'></span>
+      <!-- Toggles -->
+      <label class="hswitch" id="usb-switch-data">
+        <input type="checkbox" id="input-switch-data" name="16" disabled="disabled">
+        <span class="hslider">
+        </span>
+      </label>
+      <img src="./assets/img/green-led.png" id="img-data-led" width="25px">
+      <img src="./assets/img/datalink.png" id="img-data-link" width="148px">
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>

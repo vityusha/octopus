@@ -1,0 +1,84 @@
+{
+  "name": "OCTOPUS",
+  "version": "1.0.0",
+  "description": "Interface to LAIN USB charger",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vityusha/octopus.git"
+  },
+  "author": "Vityusha V. Vinokurov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vityusha/octopus/issues"
+  },
+  "homepage": "https://github.com/vityusha/octopus#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.61",
+    "@electron-forge/maker-deb": "^6.0.0-beta.61",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.61",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
+    "@electron-forge/maker-zip": "^6.0.0-beta.61",
+    "axios": "^0.24.0",
+    "broadcast-address": "^1.0.2",
+    "electron": "^16.0.0",
+    "less": "^4.1.2"
+  },
+  "mac": {
+    "icon": "./assets/ico/octopus.icns",
+    "category": "public.app-category.utilities"
+  },
+  "win": {
+    "icon": "./assets/ico/octopus.png"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "broadcast-address": "^1.0.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "help": "^3.0.2"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "./assets/ico/octopus.ico",
+        "ignore": [
+          "workspace.*",
+          ".gitignore"
+        ]
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "certificateFile": "../cert/dialog-nibelung.ru.pfx",
+            "certificatePassword": "Hidnorip",
+            "name": "OCTOPUS",
+            "setupIcon": "./assets/ico/octopus.ico",
+            "noMsi": "fa;se",
+            "setupMsi": "octopus.msi"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}

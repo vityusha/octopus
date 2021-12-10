@@ -1,0 +1,787 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  user-select: none;
+}
+#img-main {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+/*
+Link to dialog.su
+*/
+#link-to-website {
+  position: absolute;
+  cursor: pointer;
+  top: 13px;
+  left: 20px;
+  height: 45px;
+  width: 80px;
+  z-index: 2;
+}
+/*
+Power led
+*/
+#img-power-off {
+  position: absolute;
+  top: 12px;
+  left: 1120px;
+  z-index: 2;
+}
+#img-power-on {
+  position: absolute;
+  top: 12px;
+  left: 1120px;
+  z-index: 3;
+  visibility: hidden;
+}
+/*
+Ethernet leds
+*/
+#img-net-on {
+  position: absolute;
+  top: 80px;
+  left: 996px;
+  z-index: 2;
+  visibility: hidden;
+}
+#img-net-data {
+  position: absolute;
+  top: 80px;
+  left: 962px;
+  z-index: 2;
+  visibility: hidden;
+}
+/*
+LESS variables
+*/
+/*
+Status leds
+*/
+#img-status-0 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 0);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-1 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 1);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-2 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 2);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-3 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 3);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-4 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 4);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-5 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 5);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-6 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 6);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-7 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 7);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-8 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 8);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-9 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 9);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-10 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 10);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-11 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 11);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-12 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 12);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-13 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 13);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-14 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 14);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-status-15 {
+  position: absolute;
+  top: 58px;
+  left: calc(55px + 58px * 15);
+  z-index: 2;
+  visibility: hidden;
+}
+/*
+Charge leds
+*/
+#img-charge-0 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 0);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-1 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 1);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-2 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 2);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-3 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 3);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-4 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 4);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-5 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 5);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-6 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 6);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-7 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 7);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-8 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 8);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-9 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 9);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-10 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 10);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-11 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 11);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-12 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 12);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-13 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 13);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-14 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 14);
+  z-index: 2;
+  visibility: hidden;
+}
+#img-charge-15 {
+  position: absolute;
+  top: 58px;
+  left: calc(28px + 58px * 15);
+  z-index: 2;
+  visibility: hidden;
+}
+/*
+ Garaying numbers
+*/
+#img-gray-0 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 0);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-1 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 1);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-2 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 2);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-3 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 3);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-4 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 4);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-5 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 5);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-6 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 6);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-7 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 7);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-8 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 8);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-9 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 9);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-10 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 10);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-11 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 11);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-12 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 12);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-13 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 13);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-14 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 14);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+#img-gray-15 {
+  position: absolute;
+  top: 105px;
+  left: calc(28px + 58px * 15);
+  z-index: 2;
+  opacity: 0.7;
+  visibility: visible;
+}
+/*
+Charging indicator
+*/
+#socket-charge-0 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 0);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-1 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 1);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-2 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 2);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-3 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 3);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-4 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 4);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-5 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 5);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-6 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 6);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-7 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 7);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-8 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 8);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-9 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 9);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-10 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 10);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-11 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 11);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-12 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 12);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-13 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 13);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-14 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 14);
+  z-index: 4;
+  visibility: hidden;
+}
+#socket-charge-15 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 15);
+  z-index: 4;
+  visibility: hidden;
+}
+/*
+Fault indicator
+*/
+#socket-fault-0 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 0);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-1 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 1);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-2 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 2);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-3 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 3);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-4 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 4);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-5 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 5);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-6 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 6);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-7 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 7);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-8 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 8);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-9 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 9);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-10 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 10);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-11 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 11);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-12 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 12);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-13 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 13);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-14 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 14);
+  z-index: 5;
+  visibility: hidden;
+}
+#socket-fault-15 {
+  position: absolute;
+  top: 77px;
+  left: calc(22px + 58px * 15);
+  z-index: 5;
+  visibility: hidden;
+}
+/*
+USB switch
+*/
+#usb-switch-0 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 0);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-1 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 1);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-2 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 2);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-3 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 3);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-4 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 4);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-5 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 5);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-6 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 6);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-7 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 7);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-8 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 8);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-9 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 9);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-10 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 10);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-11 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 11);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-12 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 12);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-13 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 13);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-14 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 14);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-15 {
+  position: absolute;
+  top: 107px;
+  left: calc(60px + 58px * 15);
+  z-index: 3;
+  visibility: visible;
+}
+#usb-switch-data {
+  position: absolute;
+  top: 114px;
+  left: 1043px;
+  z-index: 3;
+  visibility: visible;
+}
+#img-data-led {
+  position: absolute;
+  top: 79px;
+  left: 1042px;
+  z-index: 3;
+  visibility: hidden;
+}
+#img-data-link {
+  position: absolute;
+  top: 40px;
+  left: 913px;
+  z-index: 3;
+  visibility: hidden;
+}
