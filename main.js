@@ -34,7 +34,7 @@ const template = [
             icon: path.join(__dirname, './assets/ico/octopus.ico'),
           });
           child.setMenu(null);
-          console.log('Openinghttp://' + boardIP + deviceinfoUrll);
+          console.log('Opening http://' + boardIP + deviceinfoUrll);
           child.loadURL('http://' + boardIP + deviceinfoUrll);
         }
       },
@@ -58,6 +58,7 @@ const template = [
             icon: path.join(__dirname, './assets/ico/octopus.ico'),
           });
           child.setMenu(null);
+          console.log('Opening http://' + boardIP + netconfigUrll);
           child.loadURL('http://' + boardIP + netconfigUrll);
         }
       },
@@ -75,7 +76,7 @@ const template = [
     label: 'О программе',
     click() {
       let details =
-        ['<Interface to LAIN USB charger\n',
+        ['Interface to LAIN USB charger\n',
           'Copyright (c) 2021 LAIN LLC',
           'E-Mail: support@dialog.su',
           'Web: http://www.dialog.su'
