@@ -1,6 +1,6 @@
 {
-  "name": "OCTOPUS",
-  "version": "1.0.0",
+  "name": "octopus",
+  "version": "1.0.1",
   "description": "Interface to LAIN USB charger",
   "main": "main.js",
   "scripts": {
@@ -25,9 +25,9 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.61",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
     "@electron-forge/maker-zip": "^6.0.0-beta.61",
-    "axios": "^0.24.0",
+    "axios": "^1.6.8",
     "broadcast-address": "^1.0.2",
-    "electron": "^16.0.0",
+    "electron": "^30.0.1",
     "less": "^4.1.2"
   },
   "mac": {
@@ -38,10 +38,11 @@
     "icon": "./assets/ico/octopus.png"
   },
   "dependencies": {
-    "axios": "^0.24.0",
+    "axios": "^1.6.8",
     "broadcast-address": "^1.0.2",
     "electron-squirrel-startup": "^1.0.0",
-    "help": "^3.0.2"
+    "help": "^3.0.2",
+    "yargs": "^17.7.2"
   },
   "config": {
     "forge": {
@@ -56,11 +57,9 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "certificateFile": "../cert/dialog-nibelung.ru.pfx",
-            "certificatePassword": "Hidnorip",
             "name": "OCTOPUS",
             "setupIcon": "./assets/ico/octopus.ico",
-            "noMsi": "fa;se",
+            "noMsi": "false",
             "setupMsi": "octopus.msi"
           }
         },

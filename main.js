@@ -77,7 +77,7 @@ const template = [
     click() {
       let details =
         ['Interface to LAIN USB charger\n',
-          'Copyright (c) 2021 LAIN LLC',
+          'Copyright (c) 2024 LAIN LLC',
           'E-Mail: support@dialog.su',
           'Web: http://www.dialog.su'
         ].join('\n');
@@ -100,8 +100,8 @@ let mainWindow;
 const createWindow = () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 1225,
-    height: 190, // real 190, develop 800
+    width: 1235,
+    height: 205, // real 190, develop 800
     maximizable: false,
     resizable: false,
     webPreferences: {
