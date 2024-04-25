@@ -1,0 +1,11 @@
+# Set anvironment
+<where-node-js-installed>\nodevars.bat
+
+# Update all modules
+npm update
+
+# Run program
+npm start
+
+# Create installer
+npm run make
